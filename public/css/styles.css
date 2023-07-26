@@ -71,15 +71,7 @@ h3.titulares{
 }
 
 .div-lupa{
-    width: 4%;
-    background-color: #fff;
-    margin :4px;
-    border: 1px solid gray;
-    height: 30px;
-    text-align: center;
-    position: absolute;
-    right: 100px;
-    border-radius: 5px;
+    display: none;
 }
 
 .div-lupa i{
@@ -151,7 +143,6 @@ footer{
 
 footer i{
     font-size: 2em;
-    margin-left: 130px;
     color: var(--celeste);
     padding-top: 20px;
     padding-bottom: 10px;
@@ -198,6 +189,13 @@ article img{
     top: 0;
 }
 
+.footer-article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 
 @media (min-width: 361px){
@@ -234,6 +232,9 @@ article img{
     
     .card-container {
         display: flex;
+    }
+    .div-lupa {
+        display: none;
     }
 
 }
@@ -304,5 +305,9 @@ article img{
     .div-lupa i{
         margin-top: 5px;
         color: var(--gris_oscuro);
+    }
+
+    footer section{
+        align-items: center;
     }
 }
